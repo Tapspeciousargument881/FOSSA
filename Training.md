@@ -51,12 +51,40 @@ If you follow the instructions in the main README.md, you should already have "d
 ---
 
 ## fossa-vits
+### Download Depth-Anything-V2-Small (Hypersim) Checkpoint
 
-Download the **Depth-Anything-V2-Small (Hypersim)** checkpoint:  
+First, create the checkpoints directory:
+
+```bash
+mkdir -p ./FOSSAModel/checkpoints
+```
+
+You have two options to obtain the checkpoint:
+
+---
+
+#### Option 1: Using `curl`
+
+From the project root directory, run:
+
+```bash
+curl -L \
+  "https://huggingface.co/depth-anything/Depth-Anything-V2-Metric-Hypersim-Small/resolve/main/depth_anything_v2_metric_hypersim_vits.pth?download=true" \
+  -o ./FOSSAModel/checkpoints/depth_anything_v2_metric_hypersim_vits.pth
+```
+
+---
+
+#### Option 2: Download from Website
+
+Download the checkpoint manually from:  
 https://github.com/DepthAnything/Depth-Anything-V2/tree/main/metric_depth  
 
-Place it at:
+Then place it at:
+
+```text
 FOSSAModel/checkpoints/depth_anything_v2_metric_hypersim_vits.pth
+```
 
 ### Run training
 ```bash
