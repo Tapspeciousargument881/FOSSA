@@ -174,7 +174,9 @@ elif 'zedd' in args.val_loader_config_choice:
     dataset_location = dict(
         repo_id="venkatsubra/ZEDD",
         subdir="",
-        source="huggingface"
+        source="huggingface",
+        zip_filename="ZEDD.zip",
+        local_dir="dataset/datasets/ZEDD",
     )
     val_dataset_args = {
     }

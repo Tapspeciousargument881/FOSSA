@@ -7,7 +7,7 @@ import torchvision
 from loss import init_criterion
 from dataset import init_dataloader
 from engine import init_optimizer_scheduler
-from util.config import get_config
+from util.config import get_config, update_hugging_face_dataset_folder
 from util.train import to_cuda
 from util.log import init_wandb, broadcast_wandb_dir, setup_logger, wandb_log_scalars
 from util.val import validate
@@ -29,6 +29,10 @@ def main():
 
     if local_rank == 0:
         init_wandb(config)
+        update_hugging_face_dataset_folder(config) # If the validation dataset is from Hugging Face, download it and update the config to point to the downloaded dataset folder
+    
+    dist.barrier()
+
     broadcast_wandb_dir(config)
     logger = setup_logger(config['log_dir'], local_rank)
 

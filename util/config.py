@@ -89,12 +89,13 @@ def download_and_extract_zip(dataset_cfg):
 
 def resolve_dataset_folder(dataset_cfg):
     if dataset_cfg.get("source") == "huggingface":
-        if os.path.exists(dataset_cfg["local_dir"]):
-            
-            print(f"Dataset already exists at {dataset_cfg['local_dir']}, skipping download.")
+        local_dir = Path(dataset_cfg["local_dir"])
+        if local_dir.exists():
+            print(f"Dataset already exists at {local_dir}, skipping download.")
         else:
+            local_dir.mkdir(parents=True, exist_ok=True)
             download_and_extract_zip(dataset_cfg)
-        root = dataset_cfg["local_dir"]
+        root = local_dir
 
         print(f"Downloaded dataset {dataset_cfg['repo_id']} to {root}")
         return Path(root) / Path(dataset_cfg["subdir"])
